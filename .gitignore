@@ -1,6 +1,7 @@
 .DS_Store
 .idea
 .wp-env.override.json
+auth.json
 releases
 vendor
 *.zip

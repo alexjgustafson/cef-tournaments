@@ -2,9 +2,16 @@
     "name": "alexjgustafson/cef-tournaments",
     "description": "Tools for displaying chess tournaments",
     "type": "wordpress-plugin",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://connect.advancedcustomfields.com"
+        }
+    ],
     "require": {
         "php": ">=7.4.0",
-        "illuminate/collections": "^8.83"
+        "illuminate/collections": "^8.83",
+        "wpengine/advanced-custom-fields-pro": "*"
     },
     "autoload": {
         "psr-4": {
@@ -20,7 +27,15 @@
     "config": {
         "platform": {
             "php": "7.4.33"
+        },
+        "allow-plugins": {
+            "composer/installers": true
         }
     },
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "extra": {
+        "installer-paths": {
+            "vendor/{$name}/": ["wpengine/advanced-custom-fields-pro"]
+        }
+    }
 }

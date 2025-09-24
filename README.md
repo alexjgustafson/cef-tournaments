@@ -12,6 +12,13 @@ Made for the Chess Education Foundation in Louisville, KY
 - PHP (see composer.json for version)
 - composer
 - Docker
+- ACF Pro License
+
+### ACF Pro
+
+Create an auth.json file. Use auth.json.example for a boilerplate.
+
+See https://www.advancedcustomfields.com/resources/installing-acf-pro-with-composer/
 
 ### Setup
 1. `composer install`
