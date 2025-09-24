@@ -32,3 +32,8 @@ if ($shouldIncludeACF) {
     include_once( MY_ACF_PATH . 'acf.php' );
     add_filter('acf/settings/url', fn($x) => MY_ACF_URL);
 }
+
+// Include all files in /includes/
+foreach (glob(__DIR__ . "/includes/*.php") as $filename) {
+    include_once $filename;
+}
