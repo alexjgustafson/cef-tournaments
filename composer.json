@@ -29,7 +29,8 @@
             "php": "7.4.33"
         },
         "allow-plugins": {
-            "composer/installers": true
+            "composer/installers": true,
+            "roots/wordpress-core-installer": true
         }
     },
     "version": "1.0.0",
@@ -37,5 +38,8 @@
         "installer-paths": {
             "vendor/{$name}/": ["wpengine/advanced-custom-fields-pro"]
         }
+    },
+    "require-dev": {
+        "roots/wordpress": "^6.8"
     }
 }
