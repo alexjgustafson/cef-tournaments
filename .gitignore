@@ -1,0 +1,6 @@
+.DS_Store
+.idea
+.wp-env.override.json
+releases
+vendor
+*.zip

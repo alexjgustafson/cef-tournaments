@@ -1,0 +1,9 @@
+{
+  "name": "alexjgustafson/cef-tournaments",
+  "version": "1.0.0",
+  "description": "Tools for displaying chess tournaments",
+  "scripts": {
+    "restart": "wp-env stop && wp-env start"
+  },
+  "author": "Alex J. Gustafson Tech LLC"
+}

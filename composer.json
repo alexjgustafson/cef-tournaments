@@ -1,0 +1,26 @@
+{
+    "name": "alexjgustafson/cef-tournaments",
+    "description": "Tools for displaying chess tournaments",
+    "type": "wordpress-plugin",
+    "require": {
+        "php": ">=7.4.0",
+        "illuminate/collections": "^8.83"
+    },
+    "autoload": {
+        "psr-4": {
+            "CEF\\Tournaments\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex J. Gustafson",
+            "email": "alexjgustafson@gmail.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "7.4.33"
+        }
+    },
+    "version": "1.0.0"
+}
