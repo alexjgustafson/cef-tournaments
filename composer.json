@@ -6,12 +6,22 @@
         {
             "type": "composer",
             "url": "https://connect.advancedcustomfields.com"
+        },
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
         }
     ],
     "require": {
         "php": ">=7.4.0",
         "illuminate/collections": "^8.83",
-        "wpengine/advanced-custom-fields-pro": "*"
+        "wpengine/advanced-custom-fields-pro": "*",
+        "guzzlehttp/guzzle": "^7.10",
+        "spatie/ray": "^1.43"
     },
     "autoload": {
         "psr-4": {
@@ -36,7 +46,9 @@
     "version": "1.0.0",
     "extra": {
         "installer-paths": {
-            "vendor/{$name}/": ["wpengine/advanced-custom-fields-pro"]
+            "vendor/{$name}/": ["wpengine/advanced-custom-fields-pro"],
+            "wordpress/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wordpress/wp-content/themes/{$name}/": ["type:wordpress-theme"]
         }
     },
     "require-dev": {

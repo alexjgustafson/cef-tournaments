@@ -2,5 +2,9 @@
   "phpVersion": "7.4",
   "plugins": [
     "."
-  ]
+  ],
+  "mappings": {
+    "wp-content/themes": "./themes"
+  },
+  "themes": ["./themes/Divi-chessedu"]
 }
