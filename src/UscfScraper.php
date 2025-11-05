@@ -38,11 +38,14 @@ class UscfScraper {
         }
 
         // Load up Affiliate Scraper tool
-//        $scraper = new AffiliateScraper(self::AFFILIATE_ID);
-//        $tournaments = $scraper->listTournamentHistory();
+        $scraper = new AffiliateScraper(self::AFFILIATE_ID);
+        $tournaments = $scraper->listTournamentHistory();
+        $result = $tournaments->filter(fn($x) => $x->startDate === $this->start)->first();
+        if(!$result){
+            return '';
+        }
 
-        // look for first event with start (or start and end)
-        // return url
+        return "https://ratings.uschess.org/event/{$result->id}";
     }
 
 

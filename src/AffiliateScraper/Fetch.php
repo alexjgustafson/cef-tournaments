@@ -13,7 +13,7 @@ class Fetch implements canFetch {
     }
 
     function affiliateTournamentHistoryUrl(): string {
-        return "https://ratings.uschess.org/affiliate/{$this->affiliateId}";
+        return "https://ratings-api.uschess.org/api/v1/affiliates/{$this->affiliateId}/events";
     }
 
     public function fetch(): ResponseInterface{
