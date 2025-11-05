@@ -19,7 +19,7 @@ array(
 'required' => 1,
 'conditional_logic' => 0,
 'wrapper' => array(
-'width' => '50',
+'width' => '100',
 'class' => '',
 'id' => '',
 ),
@@ -29,26 +29,7 @@ array(
 'default_to_current_date' => 0,
 'allow_in_bindings' => 0,
 ),
-array(
-'key' => 'field_690b9d5e3dec1',
-'label' => 'Tournament End Date',
-'name' => 'tournament_end_date',
-'aria-label' => '',
-'type' => 'date_picker',
-'instructions' => 'Optional - only needed if end date is different than start date.',
-'required' => 0,
-'conditional_logic' => 0,
-'wrapper' => array(
-'width' => '50',
-'class' => '',
-'id' => '',
-),
-'display_format' => 'F j, Y',
-'return_format' => 'Y-m-d',
-'first_day' => 1,
-'default_to_current_date' => 0,
-'allow_in_bindings' => 0,
-),
+
     array(
         'key' => 'field_690ba31380e66',
         'label' => 'Cross Table URL',

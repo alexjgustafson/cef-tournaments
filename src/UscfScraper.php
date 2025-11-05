@@ -10,7 +10,6 @@ class UscfScraper {
 
     private \WP_Post $post;
     private string $start = '';
-    private string $end = '';
 
 
     function __construct(?\WP_Post $post) {
@@ -19,7 +18,6 @@ class UscfScraper {
         }
         $this->post = $post;
         $this->start = (string) get_field('tournament_start_date', $this->post);
-        $this->end = (string) get_field('tournament_end_date', $this->post);
     }
 
     private function shouldTryToScrape() : bool {
@@ -44,7 +42,6 @@ class UscfScraper {
         if(!$result){
             return '';
         }
-
         return "https://ratings.uschess.org/event/{$result->id}";
     }
 
