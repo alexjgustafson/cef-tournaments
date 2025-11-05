@@ -11,5 +11,3 @@ add_action('parse_query', function(){
     }
     (new CrosstableUrlSaver(get_post()))->save();
 });
-
-// TODO: if we're opening up the post editor for the tournament
